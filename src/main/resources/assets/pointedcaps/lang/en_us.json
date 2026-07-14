@@ -1,0 +1,13 @@
+{
+  "itemGroup.pointedcaps": "Example Mod Tab",
+  "block.pointedcaps.example_block": "Example Block",
+  "item.pointedcaps.example_item": "Example Item",
+
+  "pointedcaps.configuration.title": "Pointed Caps Configs",
+  "pointedcaps.configuration.section.pointedcaps.common.toml": "Pointed Caps Configs",
+  "pointedcaps.configuration.section.pointedcaps.common.toml.title": "Pointed Caps Configs",
+  "pointedcaps.configuration.items": "Item List",
+  "pointedcaps.configuration.logDirtBlock": "Log Dirt Block",
+  "pointedcaps.configuration.magicNumberIntroduction": "Magic Number Text",
+  "pointedcaps.configuration.magicNumber": "Magic Number"
+}
