@@ -1,6 +1,6 @@
 {
-  "itemGroup.pointedcaps": "Example Mod Tab",
-  "block.pointedcaps.example_block": "Example Block",
+  "itemGroup.pointedcaps": "Pointed Caps",
+  "block.pointedcaps.spell_paper": "Spell Paper",
   "item.pointedcaps.example_item": "Example Item",
 
   "pointedcaps.configuration.title": "Pointed Caps Configs",
