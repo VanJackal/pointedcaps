@@ -1,9 +1,10 @@
 # Basic Implementation
 simple water spell that supports directions based on keystones
 *for now the spell should only be particles*
-- [ ] placeable entity/block that can open a UI
-- [ ] placeable entity/block that creates particles
+- [ ] placeable block that can open a UI
+- [ ] placeable block that creates particles
 - [ ] Basic UI for spell creation
+- [ ] remove unused example code
 
 # UI Improvements
 - [ ] Spell block appearance
@@ -28,3 +29,7 @@ Spells on the go and on demand. Prep in advance in the palm quire and design in 
 - Sword enchants?
 - vapor bubble
 - soar shoes (I may do these earlier)
+
+# Later
+- multiblock spell paper
+- multicircle
