@@ -2,9 +2,13 @@
 simple water spell that supports directions based on keystones
 *for now the spell should only be particles*
 - [ ] placeable block that can open a UI
-- [ ] placeable block that creates particles
+- [x] placeable block that creates particles
+- [ ] create entities that create particles
+- [ ] create 'water' entity from spell paper
+- [ ] logic for particle direction control
 - [ ] Basic UI for spell creation
-- [ ] remove unused example code
+- [ ] UI -> Logic integration
+- [ ] remove unused example code / cleanup
 
 # UI Improvements
 - [ ] Spell block appearance
