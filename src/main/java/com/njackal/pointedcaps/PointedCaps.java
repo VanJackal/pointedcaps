@@ -45,7 +45,13 @@ public class PointedCaps {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
     // BLOCKS
-    public static final DeferredBlock<Block> SPELL_PAPER = BLOCKS.registerSimpleBlock("spell_paper", BlockBehaviour.Properties.of().mapColor(MapColor.STONE));
+    public static final DeferredBlock<Block> SPELL_PAPER = BLOCKS.register("spell_paper",
+            () -> new SpellPaperBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.STONE)
+                    .instabreak()
+                    .noCollission()
+                    .noTerrainParticles()
+            ));
     public static final DeferredItem<BlockItem> SPELL_PAPER_ITEM = ITEMS.registerSimpleBlockItem("spell_paper", SPELL_PAPER);
 
     // ITEMS
