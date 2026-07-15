@@ -1,18 +1,24 @@
 package com.njackal.pointedcaps.block;
 
+import com.mojang.serialization.MapCodec;
+import com.njackal.pointedcaps.block.entity.SpellPaperBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.BaseEntityBlock;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
-public class SpellPaperBlock extends Block {
+public class SpellPaperBlock extends BaseEntityBlock {
     public static final VoxelShape SHAPE = Block.box(0, 0, 0, 16, 1, 16);
+    public static final MapCodec<SpellPaperBlock> CODEC = simpleCodec(SpellPaperBlock::new);
     public SpellPaperBlock(Properties properties) {
         super(properties);
     }
@@ -41,4 +47,13 @@ public class SpellPaperBlock extends Block {
         );
     }
 
+    @Override
+    public @Nullable BlockEntity newBlockEntity(@NotNull BlockPos blockPos, @NotNull BlockState blockState) {
+        return new SpellPaperBlockEntity(blockPos, blockState);
+    }
+
+    @Override
+    protected @NotNull MapCodec<? extends BaseEntityBlock> codec() {
+        return CODEC;
+    }
 }
