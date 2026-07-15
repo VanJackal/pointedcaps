@@ -1,5 +1,6 @@
 package com.njackal.pointedcaps;
 
+import com.njackal.pointedcaps.block.SpellPaperBlock;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;

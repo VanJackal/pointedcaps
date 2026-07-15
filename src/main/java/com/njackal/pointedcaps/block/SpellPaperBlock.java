@@ -1,4 +1,4 @@
-package com.njackal.pointedcaps;
+package com.njackal.pointedcaps.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
