@@ -9,5 +9,7 @@
   "pointedcaps.configuration.items": "Item List",
   "pointedcaps.configuration.logDirtBlock": "Log Dirt Block",
   "pointedcaps.configuration.magicNumberIntroduction": "Magic Number Text",
-  "pointedcaps.configuration.magicNumber": "Magic Number"
+  "pointedcaps.configuration.magicNumber": "Magic Number",
+
+  "container.pointedcaps.spell_paper": "Spell Paper"
 }
