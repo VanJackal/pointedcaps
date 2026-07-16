@@ -4,6 +4,9 @@ simple water spell that supports directions based on keystones
 - [x] placeable block that can open a UI
 - [x] placeable block that creates particles
 - [ ] create entities that create particles
+  - [x] ticking blockEntity
+  - [x] spawn entity from spell paper
+  - [ ] add custom entity
 - [ ] create 'water' entity from spell paper
 - [ ] logic for particle direction control
 - [ ] Basic UI for spell creation
@@ -14,6 +17,7 @@ simple water spell that supports directions based on keystones
 - [ ] Spell block appearance
   - [ ] block should display the spell on its surface
   - [ ] block should be placeable on any full surface and be 'facing' that surface
+- [ ] better looking water EntityParticles
 
 # Fire Sigil
 This should be almost the same as water for now but can cause damage and light fires
