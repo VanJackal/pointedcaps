@@ -14,6 +14,7 @@ simple water spell that supports directions based on keystones
 - [ ] remove unused example code / cleanup
 
 # UI Improvements
+make things look nicer and function better
 - [ ] Spell block appearance
   - [ ] block should display the spell on its surface
   - [ ] block should be placeable on any full surface and be 'facing' that surface
