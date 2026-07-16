@@ -9,7 +9,7 @@ simple water spell that supports directions based on keystones
   - [ ] add custom entity
     - [x] create entity class
     - [x] add entity renderer (wont actually render right now)
-    - [ ] entity creates particles at its location
+    - [x] entity creates particles at its location
     - [ ] entity has finite lifetime
 - [ ] create 'water' entity from spell paper
 - [ ] logic for particle direction control

@@ -1,5 +1,6 @@
 package com.njackal.pointedcaps.entity;
 
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.world.entity.Entity;
@@ -24,5 +25,19 @@ public class SpellParticleEntity extends Entity {
     @Override
     protected void addAdditionalSaveData(CompoundTag compoundTag) {
         //todo
+    }
+
+    @Override
+    public void tick() {
+        super.tick();
+        level().addParticle(
+                ParticleTypes.FLAME,
+                getX(),
+                getY(),
+                getZ(),
+                0,
+                0,
+                0
+        );
     }
 }
