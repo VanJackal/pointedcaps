@@ -8,6 +8,8 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.level.Level;
 
 public class SpellParticleEntity extends Entity {
+    public static final int LIFETIME = 100; // 100 ticks = 5 seconds
+
     public SpellParticleEntity(EntityType<?> entityType, Level level) {
         super(entityType, level);
     }
@@ -39,5 +41,9 @@ public class SpellParticleEntity extends Entity {
                 0,
                 0
         );
+
+        if (tickCount > LIFETIME) {
+            remove(RemovalReason.DISCARDED);
+        }
     }
 }
