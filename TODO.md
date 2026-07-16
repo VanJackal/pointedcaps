@@ -23,6 +23,7 @@ make things look nicer and function better
   - [ ] block should display the spell on its surface
   - [ ] block should be placeable on any full surface and be 'facing' that surface
 - [ ] better looking water EntityParticles
+  - [ ] custom particle that looks like water lol
 
 # Fire Sigil
 This should be almost the same as water for now but can cause damage and light fires
