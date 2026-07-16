@@ -1,5 +1,7 @@
 package com.njackal.pointedcaps;
 
+import com.njackal.pointedcaps.entity.ModEntities;
+import com.njackal.pointedcaps.entity.SpellParticleEntityRenderer;
 import com.njackal.pointedcaps.screen.ModMenuTypes;
 import com.njackal.pointedcaps.screen.SpellPaperScreen;
 import net.minecraft.client.Minecraft;
@@ -9,6 +11,7 @@ import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
@@ -35,5 +38,10 @@ public class PointedCapsClient {
     @SubscribeEvent
     public static void registerScreens(RegisterMenuScreensEvent event) {
         event.register(ModMenuTypes.SPELL_PAPER_MENU.get(), SpellPaperScreen::new);
+    }
+
+    @SubscribeEvent
+    public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
+        event.registerEntityRenderer(ModEntities.SPELL_PARTICLE.get(), SpellParticleEntityRenderer::new);
     }
 }

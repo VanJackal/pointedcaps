@@ -5,9 +5,6 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.MenuProvider;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.animal.Pig;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -44,8 +41,10 @@ public class SpellPaperBlockEntity extends BlockEntity implements MenuProvider {
         );
 
         //Spawn Entity
+        /*
         Entity pig = new Pig(EntityType.PIG, level);
         pig.setPos(blockPos.getX() + 0.5, blockPos.getY() + 1, blockPos.getZ() + 0.5);
         level.addFreshEntity(pig);
+         */
     }
 }

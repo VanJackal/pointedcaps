@@ -2,9 +2,8 @@ package com.njackal.pointedcaps;
 
 import com.njackal.pointedcaps.block.SpellPaperBlock;
 import com.njackal.pointedcaps.block.entity.ModBlockEntities;
+import com.njackal.pointedcaps.entity.ModEntities;
 import com.njackal.pointedcaps.screen.ModMenuTypes;
-import com.njackal.pointedcaps.screen.SpellPaperScreen;
-import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -88,6 +87,7 @@ public class PointedCaps {
         CREATIVE_MODE_TABS.register(modEventBus);
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (PointedCaps) to respond directly to events.
