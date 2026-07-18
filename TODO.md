@@ -11,9 +11,9 @@ simple water spell that supports directions based on keystones
     - [x] add entity renderer (wont actually render right now)
     - [x] entity creates particles at its location
     - [x] entity has finite lifetime
-- [ ] create 'water' entity from spell paper
+- [x] create 'water' entity from spell paper
   - [x] spawn entity
-  - [ ] entity moves
+  - [x] entity moves
 - [ ] logic for particle direction control
 - [ ] Basic UI for spell creation
 - [ ] UI -> Logic integration

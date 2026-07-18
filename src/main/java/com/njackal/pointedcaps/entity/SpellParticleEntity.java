@@ -5,7 +5,9 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.MoverType;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.phys.Vec3;
 
 public class SpellParticleEntity extends Entity {
     public static final int LIFETIME = 100; // 100 ticks = 5 seconds
@@ -41,6 +43,8 @@ public class SpellParticleEntity extends Entity {
                 0,
                 0
         );
+
+        move(MoverType.SELF, new Vec3(0, 0.1, 0));
 
         if (tickCount > LIFETIME) {
             remove(RemovalReason.DISCARDED);
