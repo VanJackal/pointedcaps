@@ -46,12 +46,12 @@ public class SpellPaperBlock extends BaseEntityBlock {
                             @NotNull BlockPos pos,
                             @NotNull RandomSource random) {
         level.addParticle(
-                ParticleTypes.FLAME,
+                ParticleTypes.SMOKE,
                 pos.getX()+0.5,
-                pos.getY() + 1,
+                pos.getY(),
                 pos.getZ()+0.5,
                 0,
-                0.1,
+                0,
                 0
         );
     }

@@ -1,10 +1,13 @@
 package com.njackal.pointedcaps.block.entity;
 
+import com.njackal.pointedcaps.entity.ModEntities;
+import com.njackal.pointedcaps.entity.SpellParticleEntity;
 import com.njackal.pointedcaps.screen.SpellPaperMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.MenuProvider;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -30,21 +33,8 @@ public class SpellPaperBlockEntity extends BlockEntity implements MenuProvider {
     }
 
     public static void tick(Level level, BlockPos blockPos, BlockState blockState, BlockEntity o) {
-        level.addParticle(
-                ParticleTypes.SMOKE,
-                blockPos.getX() + 0.5,
-                blockPos.getY() + 0.1,
-                blockPos.getZ() + 0.5,
-                0,
-                0,
-                0
-        );
-
-        //Spawn Entity
-        /*
-        Entity pig = new Pig(EntityType.PIG, level);
-        pig.setPos(blockPos.getX() + 0.5, blockPos.getY() + 1, blockPos.getZ() + 0.5);
-        level.addFreshEntity(pig);
-         */
+        Entity entity = new SpellParticleEntity(ModEntities.SPELL_PARTICLE.get(), level);
+        entity.setPos(blockPos.getX() + 0.5, blockPos.getY() + 1, blockPos.getZ() + 0.5);
+        level.addFreshEntity(entity);
     }
 }
