@@ -15,6 +15,9 @@ simple water spell that supports directions based on keystones
   - [x] spawn entity
   - [x] entity moves
 - [ ] logic for particle direction control
+  - [ ] class which computes the particle direction based on tick ()
+  - [ ] class logic for computing the particle velocity based on sign data
+    - [ ] sign data definition (the types should probably be done via custom registry)
 - [ ] Basic UI for spell creation
 - [ ] UI -> Logic integration
 - [ ] remove unused example code / cleanup
@@ -26,6 +29,9 @@ make things look nicer and function better
   - [ ] block should be placeable on any full surface and be 'facing' that surface
 - [ ] better looking water EntityParticles
   - [ ] custom particle that looks like water lol
+- [ ] more signs
+  - [ ] pipelining for sign processing
+- [ ] water particle gravity (this might need to wait till we have 2 types so I can think of how to differentiate)
 
 # Fire Sigil
 This should be almost the same as water for now but can cause damage and light fires
